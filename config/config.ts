@@ -75,10 +75,10 @@ export default {
   devtool: isAntDesignProPreview ? 'source-map' : false,
   // umi routes: https://umijs.org/zh/guide/router.html
   routes: [
-    {
-      path: '/index.html',
-      redirect: '/dashboard/monitor',
-    },
+    // {
+    //   path: '/index.html',
+    //   redirect: '/dashboard/monitor',
+    // },
     {
       path: '/',
       component: '../layouts/BlankLayout',
