@@ -112,7 +112,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
         ]}
         footerRender={()=> {return <h1></h1>}}
         formatMessage={formatMessage}
-        rightContentRender={rightProps => <RightContent {...rightProps} />}
+        rightContentRender={rightProps => <RightContent {...rightProps}  />}
         {...props}
         {...settings}
       >
