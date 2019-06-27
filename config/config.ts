@@ -67,7 +67,7 @@ export default {
   plugins,
   block: {
     defaultGitUrl: 'https://github.com/ant-design/pro-blocks',
-  }, 
+  },
   hash: true,
   targets: {
     ie: 11,
@@ -82,7 +82,7 @@ export default {
     {
       path: '/',
       component: '../layouts/BlankLayout',
-      routes: [ 
+      routes: [
         {
           path: '/user',
           component: '../layouts/UserLayout',
@@ -206,7 +206,7 @@ export default {
                   name: 'table-list',
                   path: '/list/table-list',
                   component: './list/table-list',
-                }, 
+                },
                 {
                   name: 'card-list',
                   path: '/list/card-list',
@@ -218,7 +218,7 @@ export default {
               path: '/system',
               icon: 'table',
               name: 'system',
-              routes: [ 
+              routes: [
                 {
                   name: 'system-user',
                   path: '/system/table-list',
@@ -352,7 +352,7 @@ export default {
   define: {
     ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION:
       ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION || '', // preview.pro.ant.design only do not use in your production ; preview.pro.ant.design 专用环境变量，请不要在你的项目中使用它。
-    API_ADDRESS_ENV: 'llj'  
+    'process.env.apiUrl': 'app-default',
   },
   ignoreMomentLocale: true,
   lessLoaderOptions: {
@@ -366,7 +366,7 @@ export default {
         resourcePath: string;
       },
       _: string,
-      localName: string
+      localName: string,
     ) => {
       if (
         context.resourcePath.includes('node_modules') ||
